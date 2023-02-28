@@ -72,6 +72,20 @@ public class ItemTest {
         Assert.assertNotEquals(12.0, item.total(), 0.0);
     }
     
+    @Test
+    public void testCafeCorreto() {
+
+        Item item = new Item("Cafe", 10);
+        Assert.assertEquals(12.5, item.total(), 0.0);
+    }
+
+    @Test
+    public void testCafeIncorreto() {
+
+        Item item = new Item("Cafe", 10);
+        Assert.assertNotEquals(12.0, item.total(), 0.0);
+    }
+    
      @Test
     public void testAguaCorreto() {
 

@@ -12,7 +12,6 @@ package com.mycompany.supermercadooo.model;
 //Chocolate, Bala, Refrigerante, Cerveja e Agua
 public class Item {
 
-    
     private String nome;
     private double valor;
 
@@ -20,7 +19,7 @@ public class Item {
         this.nome = nome;
         this.valor = valor;
     }
-    
+
     public double total() {
 
         if (this.nome.equals("Chocolate")) {
@@ -31,6 +30,8 @@ public class Item {
             return this.valor * (1 + 0.15);
         } else if (this.nome.equals("Cerveja")) {
             return this.valor * (1 + 0.05);
+        } else if (this.nome.equals("Cafe")) {
+            return this.valor * (1 + 0.25);
         } else if (this.nome.equals("Agua")) {
             return this.valor;
         } else {
