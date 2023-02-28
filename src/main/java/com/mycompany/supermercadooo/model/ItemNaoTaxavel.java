@@ -11,8 +11,8 @@ package com.mycompany.supermercadooo.model;
  */
 public class ItemNaoTaxavel extends Item{
     
-    public ItemNaoTaxavel(String nome, double valor) {
-        super(nome, valor);
+    public ItemNaoTaxavel(double valor) {
+        super(valor);
     }
 
     @Override

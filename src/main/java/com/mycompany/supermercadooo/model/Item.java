@@ -12,12 +12,10 @@ package com.mycompany.supermercadooo.model;
 //Chocolate, Bala, Refrigerante, Cerveja e Agua
 public abstract class Item {
 
-    private String nome;
     protected double valor;
 
-    public Item(String nome, double valor) {
-        this.nome = nome;
-        this.valor = valor;
+    public Item(double valor) {
+       this.valor = valor;
     }
 
     protected abstract double total(); 

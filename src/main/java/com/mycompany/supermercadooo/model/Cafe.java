@@ -12,7 +12,7 @@ package com.mycompany.supermercadooo.model;
 public class Cafe extends ItemTaxavel{
     
     public Cafe(double valor) {
-        super("Cafe", valor);
+        super(valor);
     }
 
     @Override

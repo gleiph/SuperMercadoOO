@@ -12,7 +12,7 @@ package com.mycompany.supermercadooo.model;
 public class Agua extends ItemNaoTaxavel{
     
     public Agua(double valor) {
-        super("Agua", valor);
+        super(valor);
     }
     
 }
