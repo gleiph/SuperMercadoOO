@@ -9,7 +9,7 @@ package com.mycompany.supermercadooo.model;
  *
  * @author gleip
  */
-public class ItemTaxavel extends Item{
+public abstract class ItemTaxavel extends Item{
     
     public ItemTaxavel(String nome, double valor) {
         super(nome, valor);
@@ -20,8 +20,6 @@ public class ItemTaxavel extends Item{
         return super.valor * (1 + taxa()); 
     }
     
-    protected double taxa(){
-        return 0;
-    }
+    protected abstract double taxa();
     
 }
