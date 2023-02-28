@@ -100,9 +100,4 @@ public class ItemTest {
         Assert.assertNotEquals(12.0, item.total(), 0.0);
     }
     
-    @Test
-    public void testProdutoInexistente(){
-        Item item = new Item("Nada", 10);
-        Assert.assertEquals(0, item.total(), 0.0);
-    }
 }

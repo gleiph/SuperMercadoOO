@@ -10,7 +10,7 @@ package com.mycompany.supermercadooo.model;
  * @author gleip
  */
 //Chocolate, Bala, Refrigerante, Cerveja e Agua
-public class Item {
+public abstract class Item {
 
     private String nome;
     protected double valor;
@@ -20,24 +20,5 @@ public class Item {
         this.valor = valor;
     }
 
-    public double total() {
-
-        if (this.nome.equals("Chocolate")) {
-            return this.valor * (1 + 0.1);
-        } else if (this.nome.equals("Bala")) {
-            return this.valor * (1 + 0.2);
-        } else if (this.nome.equals("Refrigerante")) {
-            return this.valor * (1 + 0.15);
-        } else if (this.nome.equals("Cerveja")) {
-            return this.valor * (1 + 0.05);
-        } else if (this.nome.equals("Cafe")) {
-            return this.valor * (1 + 0.25);
-        } else if (this.nome.equals("Agua")) {
-            return this.valor;
-        } else {
-            return 0;
-        }
-
-    }
-
+    protected abstract double total(); 
 }
