@@ -13,7 +13,7 @@ package com.mycompany.supermercadooo.model;
 public class Item {
 
     private String nome;
-    private double valor;
+    protected double valor;
 
     public Item(String nome, double valor) {
         this.nome = nome;
